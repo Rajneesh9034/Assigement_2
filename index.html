@@ -1,0 +1,19 @@
+<script>
+    var person = {
+    name: "Amar",
+    age: 30,
+    occupation: "Software Developer"
+};
+
+
+function printPersonDetails(personObj) {
+    for (var key in personObj) {
+        if (personObj.hasOwnProperty(key)) {
+            console.log(key + ": " + personObj[key]);
+        }
+    }
+}
+
+
+printPersonDetails(person);
+</script>
